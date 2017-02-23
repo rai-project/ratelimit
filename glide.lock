@@ -1,5 +1,5 @@
 hash: f8e4298dd8479dc3c778008f25c7545a3baa218880431650570a439cfab244ec
-updated: 2017-02-22T18:35:50.746561075-06:00
+updated: 2017-02-22T18:44:14.789675969-06:00
 imports:
 - name: github.com/dustin/go-humanize
   version: 7a41df006ff9af79a29f0ffa9c5f21fbe6314a2d
@@ -41,13 +41,13 @@ imports:
 - name: github.com/pkg/errors
   version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/rai-project/config
-  version: 011efcd9cdd5fe1d995773919da5a07e020d37c3
+  version: f837bb33aa99c7321b648aad4dbaf72959fe5e6f
 - name: github.com/rai-project/godotenv
   version: 726cc8b906e3d31c70a9671c90a13716a8d3f50d
 - name: github.com/rai-project/logger
-  version: 6ae7860f311ccf6799a59c945e7244e68f244ce0
+  version: e0de395cf97ddfa105a24d06bf43aaeff8670c72
 - name: github.com/rai-project/vipertags
-  version: 997637b503048b1f8d2a1126ff497db620632608
+  version: c4cab707247985d21c72ba3342a25440949e02bf
 - name: github.com/Sirupsen/logrus
   version: c078b1e43f58d563c74cebe63c85789e76ddb627
   subpackages:
