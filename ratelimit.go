@@ -4,7 +4,6 @@ import (
 	"io/ioutil"
 	"os"
 	"path/filepath"
-	"strconv"
 	"time"
 
 	"github.com/Unknwon/com"
@@ -18,7 +17,13 @@ const (
 	timeFormat = time.RFC3339Nano
 )
 
-func New(timeSecondLimit int) error {
+func New(opts ...RateLimitOption) error {
+	options := RateLimitOptions{
+		limit: Config.RateLimit,
+	}
+	for _, o := range opts {
+		o(&options)
+	}
 	tmpDir := os.TempDir()
 	if !com.IsDir(tmpDir) {
 		msg := "Not able to find temporary directory for " + config.App.Name + "."
@@ -43,10 +48,10 @@ func New(timeSecondLimit int) error {
 		return errors.Wrap(err, msg)
 	}
 	timeDiff := time.Since(prevTime)
-	if timeDiff < timeSecondLimit*time.Second {
+	if timeDiff < options.limit {
 		msg := "Last submission was made " + humanize.Time(prevTime) + ". " +
-			"Due to the rate limitter, submissions are not allows within a " + strconv.Itoa(timeSecondLimit) +
-			" second time window. "
+			"Due to the rate limitter, submissions are not allows within a " + options.limit.String() +
+			"  time window. "
 		log.Debug(msg)
 		return errors.New(msg)
 	}
