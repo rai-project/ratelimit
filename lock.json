@@ -1,5 +1,5 @@
 {
-    "memo": "ac97622d61fb8f045a75a11f1c21c52d49297a4737d5ef1ea6668dc7b7da6bfe",
+    "memo": "",
     "projects": [
         {
             "name": "github.com/GeertJohan/go-sourcepath",
@@ -27,28 +27,9 @@
             ]
         },
         {
-            "name": "github.com/aws/aws-sdk-go",
-            "branch": "master",
-            "revision": "2d3b3bc3aae6a09a9b194aa6eb71326fcbe2e918",
-            "packages": [
-                "aws",
-                "aws/credentials",
-                "aws/session",
-                "service/kinesis"
-            ]
-        },
-        {
             "name": "github.com/dustin/go-humanize",
             "branch": "master",
             "revision": "7a41df006ff9af79a29f0ffa9c5f21fbe6314a2d",
-            "packages": [
-                "."
-            ]
-        },
-        {
-            "name": "github.com/evalphobia/logrus_kinesis",
-            "branch": "master",
-            "revision": "3a9524d4e5540cc81c920ee17bd8ad1d47437f5d",
             "packages": [
                 "."
             ]
@@ -78,25 +59,9 @@
             ]
         },
         {
-            "name": "github.com/go-ini/ini",
-            "version": "v1.25.2",
-            "revision": "74bdc99692c3408cb103221e38675ce8fda0a718",
-            "packages": [
-                "."
-            ]
-        },
-        {
             "name": "github.com/hashicorp/hcl",
             "branch": "master",
             "revision": "372e8ddaa16fd67e371e9323807d056b799360af",
-            "packages": [
-                "."
-            ]
-        },
-        {
-            "name": "github.com/jmespath/go-jmespath",
-            "version": "0.2.2",
-            "revision": "3433f3ea46d9f8019119e7dd41274e112a2359a9",
             "packages": [
                 "."
             ]
@@ -120,7 +85,7 @@
         {
             "name": "github.com/mattn/go-colorable",
             "branch": "master",
-            "revision": "5411d3eea5978e6cdc258b30de592b60df6aba96",
+            "revision": "d898aa9fb31c91f35dd28ca75db377eff023c076",
             "packages": [
                 "."
             ]
@@ -176,7 +141,7 @@
         {
             "name": "github.com/rai-project/config",
             "branch": "master",
-            "revision": "0e314b8ace535477c437c3dd3ac5c0bf23f55eb9",
+            "revision": "655adcc9cc81726db7ba9d81157c9a028029692a",
             "packages": [
                 "."
             ]
@@ -192,7 +157,7 @@
         {
             "name": "github.com/rai-project/logger",
             "branch": "master",
-            "revision": "c2cee355c0b630c5f6c2c169bdf541b32c9f8b06",
+            "revision": "03464c07fcdd71ef8f4f86106a93901aa6272de5",
             "packages": [
                 "."
             ]
@@ -200,7 +165,7 @@
         {
             "name": "github.com/rai-project/vipertags",
             "branch": "master",
-            "revision": "997637b503048b1f8d2a1126ff497db620632608",
+            "revision": "c548926ed2e6b30c7bd8020849e386ea9d4d15c4",
             "packages": [
                 "."
             ]

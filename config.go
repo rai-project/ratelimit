@@ -8,30 +8,30 @@ import (
 	"github.com/rai-project/vipertags"
 )
 
-type ratelimiteConfig struct {
+type ratelimitConfig struct {
 	RateLimit time.Duration `json:"rate_limit" config:"app.rate_limit" default:"30s"`
 }
 
 var (
-	Config = &ratelimiteConfig{}
+	Config = &ratelimitConfig{}
 )
 
-func (ratelimiteConfig) ConfigName() string {
+func (ratelimitConfig) ConfigName() string {
 	return "RateLimit"
 }
 
-func (ratelimiteConfig) SetDefaults() {
+func (ratelimitConfig) SetDefaults() {
 }
 
-func (a *ratelimiteConfig) Read() {
+func (a *ratelimitConfig) Read() {
 	vipertags.Fill(a)
 }
 
-func (c ratelimiteConfig) String() string {
+func (c ratelimitConfig) String() string {
 	return pp.Sprintln(c)
 }
 
-func (c ratelimiteConfig) Debug() {
+func (c ratelimitConfig) Debug() {
 	log.Debug("RateLimit Config = ", c)
 }
 
