@@ -1,43 +1,16 @@
 hash: f8e4298dd8479dc3c778008f25c7545a3baa218880431650570a439cfab244ec
-updated: 2017-02-22T18:04:41.183866191-06:00
+updated: 2017-02-22T18:35:50.746561075-06:00
 imports:
-- name: github.com/aws/aws-sdk-go
-  version: 90dec2183a5f5458ee79cbaf4b8e9ab910bc81a6
-  subpackages:
-  - aws
-  - aws/awserr
-  - aws/awsutil
-  - aws/client
-  - aws/client/metadata
-  - aws/corehandlers
-  - aws/credentials
-  - aws/credentials/ec2rolecreds
-  - aws/defaults
-  - aws/ec2metadata
-  - aws/request
-  - aws/session
-  - aws/signer/v4
-  - private/endpoints
-  - private/protocol
-  - private/protocol/json/jsonutil
-  - private/protocol/jsonrpc
-  - private/protocol/rest
-  - private/waiter
-  - service/kinesis
 - name: github.com/dustin/go-humanize
   version: 7a41df006ff9af79a29f0ffa9c5f21fbe6314a2d
-- name: github.com/evalphobia/logrus_kinesis
-  version: 3a9524d4e5540cc81c920ee17bd8ad1d47437f5d
 - name: github.com/fatih/color
-  version: 5ec5d9d3c2cf82e9688b34e9bc27a94d616a7193
+  version: 7824417a424b65227be8ac9b14d545a7f3e6c3f0
 - name: github.com/fatih/structs
   version: a720dfa8df582c51dee1b36feabb906bde1588bd
 - name: github.com/fsnotify/fsnotify
   version: a904159b9206978bb6d53fcc7a769e5cd726c737
 - name: github.com/GeertJohan/go-sourcepath
   version: 83e8b8723a9bf39481216e80575f4854c63ece4a
-- name: github.com/go-ini/ini
-  version: 74bdc99692c3408cb103221e38675ce8fda0a718
 - name: github.com/hashicorp/hcl
   version: 630949a3c5fa3c613328e1b8256052cbc2327c9b
   subpackages:
@@ -49,14 +22,12 @@ imports:
   - json/parser
   - json/scanner
   - json/token
-- name: github.com/jmespath/go-jmespath
-  version: bd40a432e4c76585ef6b72d3fd96fb9b6dc7b68d
 - name: github.com/k0kubun/pp
   version: 027a6d1765d673d337e687394dbe780dd64e2a1e
 - name: github.com/magiconair/properties
   version: b3b15ef068fd0b17ddf408a23669f20811d194d2
 - name: github.com/mattn/go-colorable
-  version: d898aa9fb31c91f35dd28ca75db377eff023c076
+  version: 5411d3eea5978e6cdc258b30de592b60df6aba96
 - name: github.com/mattn/go-isatty
   version: dda3de49cbfcec471bd7a70e6cc01fcc3ff90109
 - name: github.com/mitchellh/go-homedir
@@ -70,11 +41,11 @@ imports:
 - name: github.com/pkg/errors
   version: 645ef00459ed84a119197bfb8d8205042c6df63d
 - name: github.com/rai-project/config
-  version: 0e314b8ace535477c437c3dd3ac5c0bf23f55eb9
+  version: 011efcd9cdd5fe1d995773919da5a07e020d37c3
 - name: github.com/rai-project/godotenv
   version: 726cc8b906e3d31c70a9671c90a13716a8d3f50d
 - name: github.com/rai-project/logger
-  version: c2cee355c0b630c5f6c2c169bdf541b32c9f8b06
+  version: 6ae7860f311ccf6799a59c945e7244e68f244ce0
 - name: github.com/rai-project/vipertags
   version: 997637b503048b1f8d2a1126ff497db620632608
 - name: github.com/Sirupsen/logrus
@@ -96,7 +67,7 @@ imports:
 - name: github.com/Unknwon/com
   version: 28b053d5a2923b87ce8c5a08f3af779894a72758
 - name: golang.org/x/sys
-  version: b699b7032584f0953262cb2788a0ca19bb494703
+  version: e24f485414aeafb646f6fca458b0bf869c0880a1
   subpackages:
   - unix
 - name: golang.org/x/text
