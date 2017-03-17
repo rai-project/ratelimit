@@ -10,21 +10,29 @@ import (
 
 type ratelimitConfig struct {
 	RateLimit time.Duration `json:"rate_limit" config:"app.rate_limit" default:"30s"`
+	done      chan struct{} `json:"-" config:"-"`
 }
 
 var (
-	Config = &ratelimitConfig{}
+	Config = &ratelimitConfig{
+		done: make(chan struct{}),
+	}
 )
 
 func (ratelimitConfig) ConfigName() string {
 	return "RateLimit"
 }
 
-func (ratelimitConfig) SetDefaults() {
+func (a *ratelimitConfig) SetDefaults() {
+	vipertags.SetDefaults(a)
 }
 
 func (a *ratelimitConfig) Read() {
 	vipertags.Fill(a)
+}
+
+func (c ratelimitConfig) Wait() {
+	<-c.done
 }
 
 func (c ratelimitConfig) String() string {
