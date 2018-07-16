@@ -9,7 +9,7 @@ import (
 )
 
 type ratelimitConfig struct {
-	RateLimit time.Duration `json:"rate_limit" config:"app.rate_limit" default:"30s"`
+	RateLimit time.Duration `json:"rate_limit" config:"app.rate_limit" default:"120s"`
 	done      chan struct{} `json:"-" config:"-"`
 }
 
